@@ -1,0 +1,124 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+/*以上是整个文档通用的样式*/
+html{
+  background-color: #dbd1d3;
+}
+body{
+  width: 1000px;
+  margin: 0px auto;
+}
+nav{
+  width: 1000px;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+}
+nav a{
+  color: black;
+}
+#nav_scroll{
+  height: 20px;
+  position: absolute;
+  color: blue;
+  margin-left: 50px;
+}
+::-webkit-input-placeholder{         /*设置input元素中placeholder属性的颜色*/
+  color: green;
+  opacity: 0.6;
+}
+nav img{
+  float: left;
+  margin: 10px 30px;
+}
+#nav_ul li{
+  float: left;
+  padding: 20px;
+  margin: 20px auto;
+  font: bold 16px 黑体;
+}
+#nav_ul a:visited{
+  color: black;
+}
+#nav_ul a:hover{
+  color: red;
+}
+#search{
+  float: right;
+  margin: 25px;
+  padding: 12px;
+}
+#search form{
+  border: 1px solid black;
+}
+#search input{
+  border: none;
+  width: 180px;
+  height: 23px;
+}
+section{
+	width: 1000px;
+	height: 530px;
+	background-color: white;
+	position: absolute;
+	top: 120px;
+
+}
+section form{
+	width: 500px;
+	height: 400px;
+	margin: 50px auto;
+	border: 1px solid #456;
+	box-shadow: 2px 2px 5px 1px #456;
+  background-color: #999;
+}
+section form h1{
+	margin-left: 200px;
+	margin-top: 20px;
+	font: 24px 华文彩云;
+	color: black;
+}
+.p_name{
+	margin-top: 80px;
+}
+section form p{
+	margin-left: 100px;
+	margin-bottom: 30px;
+}
+section form p label{
+	font: 20px 黑体;
+  color: blue;
+}
+section form p input{
+	width: 200px;
+	height: 22px;
+}
+.p_password2 label{
+	font-size: 16px;
+}
+section button{
+	width: 80px;
+	height: 25px;
+	background-color: #6699ff;
+	border: none;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+#but1{
+	margin-left: 175px;
+}
+#but2{
+	margin-left: 40px;
+}
+::-webkit-input-placeholder{
+	color: green;
+  opacity: 0.6;
+}

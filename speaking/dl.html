@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/dl.css">
+</head>
+<body>
+	<form id="form" method="post" name="myForm">
+		<ul>
+			<li class="p1"> 
+				<label>用户名:</label>
+				<input type="text" placeholder="请输入用户名" name="name" id="name"><br>
+			</li>
+			<li class="p2">
+				<label>密 &nbsp;码:</label>
+				<input type="password" placeholder="请输入密码" name="password" id="password"><br>
+			</li>
+			<li>
+				<button type="button" id="button1" onclick="myCheck()">登录</button>
+				<button type="button" id="button2" onclick="zhuce()">注册</button>
+			</li>
+		</ul>
+	</form>
+	<script>
+		function myCheck() {
+			var myForm = document.getElementById("form");
+			if(myForm.name.value == "") {
+				alert("用户名不能为空");         //验证用户名是否为空
+				myForm.name.focus();
+				return false;
+			}
+			if(myForm.password.value == "") {
+				alert("密码不能为空");           //验证密码是否为空
+				myForm.password.focus();
+				return false;
+			}
+			if(myForm.name.value !="" && myForm.password.value !="" ) {
+				var name = document.getElementById("name").value;
+				var password = document.getElementById("password").value;
+				for(var i= 0;i < localStorage.length; i++){
+					if(localStorage.key(i)==name){
+						var result_password = localStorage.getItem(name);
+						if(String(password) == result_password) {         //将数字转化为字符串，因为web存储键/值都是字符串
+							alert("登录成功");
+							location.href = "xm.html";
+						}else{
+							alert("用户名或密码输入不正确，请重新输入");
+						}
+						
+					}
+				}
+			}
+		}
+		
+		//单击注册时转为注册界面
+		function zhuce(){
+			location.href="zc.html";      
+		}
+	</script>
+</body>
+</html>

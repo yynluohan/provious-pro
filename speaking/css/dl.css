@@ -1,0 +1,65 @@
+*{
+			margin: 0px;
+			padding: 0px;
+		}
+		ul{
+			list-style: none;
+		}
+		html{
+			max-width: 1000px;
+			background-color: #cccccc;
+		}
+		body{
+		    background-image: url("../images/speaking1.jpg");
+		    width: 1000px;
+		    height: 655px;
+		    margin-left: 200px;
+		}
+		form{
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			top: 150px;
+			left: 698px;
+		}
+		.p1{
+			margin-top: 160px;
+			margin-left: 80px;
+		}
+		.p1 label{
+			margin-right: 5px;
+		}
+		.p2{
+			margin-top: 30px;
+			margin-left: 80px;
+		}
+		.p2 label{
+			margin-right: 7px;
+		}
+		label{
+			font: 20px 华文彩云;
+		    color: white;
+		}
+		input{
+			height: 24px;
+			width: 220px;
+		}
+		button{
+			width: 60px;
+			height: 30px;
+			margin-top: 40px;
+			background-color: #33ccff;
+			border: none;
+			border-radius: 5px;
+			font: bold 15px 黑体;
+		}
+		#button1{
+			margin-left: 180px;
+		}
+		#button2{
+			margin-left: 50px;
+		}
+		::-webkit-input-placeholder{
+			color: #456;
+			opacity: 0.7;
+		}

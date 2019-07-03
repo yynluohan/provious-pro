@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		ul{
+			list-style: none;
+		}
+		html{
+			max-width: 1000px;
+			background-color: #cccccc;
+		}
+		body{
+		    background-image: url("./images/speaking1.jpg");
+		    width: 1000px;
+		    height: 655px;
+		    margin-left: 200px;
+		}
+		form{
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			top: 150px;
+			left: 698px;
+		}
+		.p1{
+			margin-top: 150px;
+			margin-left: 80px;
+		}
+		.p2{
+			margin-top: 30px;
+			margin-left: 80px;
+		}
+		.p2 label{
+			margin-right: 3px;
+		}
+		.p3{
+			margin-top: 30px;
+			margin-left: 80px;
+		}
+		.p3 label{
+			font-size: 18px;
+			margin-right: 5px;
+		}
+		label{
+           font: 20px 华文彩云;
+		   color: white;
+		}
+		input{
+			height: 24px;
+			width: 220px;
+		}
+		button{
+			width: 100px;
+			height: 30px;
+			margin-top: 30px;
+			margin-left: 290px;
+			background-color: #33ccff;
+			border: none;
+			border-radius: 5px;
+			font: bold 15px 黑体;
+		}
+		::-webkit-input-placeholder{
+			color: #456;
+			opacity: 0.7;
+		}
+	</style>
+</head>
+<body>
+	<script src="./js/zc.js"></script>
+	<form method="post" name="myForm" id="form">
+		<ul>
+			<li class="p1">
+				<label>用&nbsp;户&nbsp;名:</label>
+				<input type="text" placeholder="请输入用户名" name="name" id="name"><br>
+			</li>
+			<li class="p2">
+				<label>密 &nbsp;&nbsp;&nbsp;码:</label>
+				<input type="password" placeholder="请输入密码" name="password" id="password"><br>
+			</li>
+			<li class="p3">
+				<label>确认密码:</label>
+				<input type="password" name="password2" placeholder="再次确认密码" id="password2">
+			</li>
+		</ul>
+			<button type="button" onclick="myCheck()">注册</button>
+	</form>
+</body>
+</html>

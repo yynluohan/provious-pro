@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/xm2.css">
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/xm.js" charset="gbk"></script>
+</head>
+<body>
+	<nav>
+		<ul id="menu">
+			<li class="li1">
+				<a href="#">
+					<span class="icon-home"></span>主页
+				</a>
+			</li>
+			<li class="li2">
+				<a href="#">
+					<span class="icon-user"></span>个人中心
+					<ol class="iten2">
+						<li><a href="#">说说</a></li>
+						<li><a href="#">相册</a></li>
+						<li><a href="#">留言版</a></li>
+						<li><a href="#">日志</a></li>
+						<li><a href="#">设置</a></li>
+					</ol>
+				</a>
+			</li>
+			<li class="li3">
+				<a href="#">
+					<span class="icon-group"></span>好友
+					<ol class="iten3">
+						<li><a href="#">亲密好友</a></li>
+						<li><a href="#">添加好友</a></li>
+						<li><a href="#">删除好友</a></li>
+						<li><a href="#">拉黑好友</a></li>
+					 </ol>	
+				</a>
+			</li>
+			<li class="li4">
+				<a href="#">
+					<span class="icon-th-large"></span>游戏
+					<ol class="iten4">
+						<li><a href="#">英雄联盟</a></li>
+						<li><a href="#">穿越火线</a></li>
+						<li><a href="#">热门游戏</a></li>
+						<li><a href="#">更多游戏</a></li>
+					</ol>
+				</a>
+			</li>
+			<li class="li5">
+				<a href="#">
+					<span class="icon-envelope-alt"></span>信息
+					<ol class="iten5">
+						<li><a href="#">系统信息</a></li>
+						<li><a href="#">好友信息</a></li>
+					</ol>
+				</a>
+			</li>
+		</ul>
+		<div id="sousuo">
+			<input type="text" name="text" placeholder="好友/游戏/动态">
+			<span class="icon-search"></span>
+		</div>
+	</nav>
+	<aside>
+		<p>美好的回忆</p>
+		<span>
+			<a href="#">今天访客:50<br>
+				访问总量:162500
+			</a>
+		</span>
+	</aside>
+	<section>
+		<div id="left1">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="icon-user"></span>好友动态
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-heart"></span>特别关心
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-bell"></span>与我相关
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-list-alt"></span>那年今日
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-gift"></span>送礼物
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-qrcode"></span>游戏应用
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon-star-empty"></span>我的收藏
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="midden">
+			<form method="post">
+				<input type="text" placeholder="标题" id="input_biaoti">
+				<input type="text" placeholder="说点什么吧" name="text" id="input_text">
+				<button onclick="save()" id="bt">发表</botton>
+			</form>
+	   </div>
+	   <div id="right1">
+			<p>
+				北京时间：<br>
+				<span id="times"><span>
+			</p>
+	   </div>
+	   <div id="left2">
+			<ul>
+				<li><a href="#">热门资讯</a></li>
+				<li><a href="#">今日头条</a></li>
+				<li><a href="#">热门游戏</a></li>
+				<li><a href="#">更多应用</a></li>
+			</ul>
+	   </div>
+	   <div id="midden1">
+			<div id="midden1-1">
+				全部动态<span class="icon-chevron-down"></span>
+			</div>
+			<div id="dongtai">
+				<ul>
+					<li><a href="#">好友动态</a></li>
+					<li><a href="#">相片</a></li>
+					<li><a href="#">日志</a></li>
+				</ul>
+		   </div>
+		   <p id="speak"></p>
+	   </div>
+	</section>
+	<footer>
+		<div id="bottom">
+			@版权所有  开发者：若寒
+			<a href="#">网站首页</a>
+			<a href="dl.html">管理入口</a>
+		</div>
+	</footer>
+</body>
+</html>

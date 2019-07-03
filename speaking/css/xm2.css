@@ -1,0 +1,250 @@
+﻿        * {
+			margin: 0px;
+			padding: 0px;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+			font-size: 13px;
+		}
+		a:hover {
+			color: #cdd;
+		}
+		ul ,ol{
+			list-style: none;
+		}
+		html,body {
+			max-width: 1000px;
+			margin: 0px auto;
+			background-color: rgb(202,245,250);
+		}
+		nav,
+		nav {
+			height: 51px;
+			background-color: #111;
+			background-image: linear-gradient(#444, #111);   /*渐变背景*/
+		}
+		.iten2 ,.iten3 ,.iten4 ,.iten5 {
+			width: 100px;
+			background-color: #111;
+			position: absolute;
+			text-align: center;
+			display: none;
+		}
+		.iten2 {
+			top: 51px;
+			left: 400px;
+		}
+		.iten3 {
+			top: 51px;
+			left: 480px;
+		}
+		.iten4 {
+			top: 50px;
+			left: 555px;
+		}
+		.iten5 {
+			top: 50px;
+			left: 630px;
+		}
+		.iten1 li,.iten2 li,.iten3 li ,.iten4 li ,.iten5 li{
+			width: 70px;
+		}
+
+		#menu {
+			margin-left: 150px;
+		}
+		#menu li {
+			float: left;
+			padding: 15px;
+		}
+		#menu li span {
+			margin-right: 5px;
+		}
+		#sousuo {
+			width: 200px;
+			height: 25px;
+			border: 1px solid #999;
+			position: absolute;
+			left: 850px;
+			top: 13px;
+		}
+		#sousuo input {
+			height: 23px;
+			border: 0px;
+			padding: 1px;
+			background-image: linear-gradient(#444, #111);
+			margin-left: 1px;
+			margin-top: -15px;
+			color: white;
+		}
+		#sousuo span {
+			color: white;
+			background-image: linear-gradient(#444, #111);
+		}
+		aside {
+			width: 1000px;
+			height: 170px;
+			background-image: url("../images/6.jpg");
+		}
+		aside p {
+			font: bold 18px Arial;
+			padding: 20px;
+			color: #caf;
+			text-shadow: 0 1px 0 #000;
+		}
+		aside span {
+			float: right;
+			display: block;
+			padding: 10px;
+			margin-right: 20px;
+			margin-top: -10px;
+			border: 1px dotted #caf;
+		}
+		aside a {
+			color: #456;
+		}
+		section {
+			width: 1000px;
+			height: 100%;
+		}
+		#left1 {
+			width: 180px;
+			height: 287px;
+			float: left;
+			background-color: #111;
+			margin-top: 20px;
+		}
+		#left1 ul li {
+			padding: 10px;
+			text-indent: 20px;
+		}
+		#left1 span {
+			margin-right: 5px;
+		}
+		#midden {
+			width: 600px;
+			height: 100px;
+			background-color: #111;
+			background-image: linear-gradient(#444, #111);
+			float: left;
+			margin-left: 20px;
+			margin-top: 20px;
+
+		}
+		#midden input {
+			width: 500px;
+			height: 30px;
+			background-color: #111;
+			background-image: linear-gradient(#444, #111);
+			margin-top: 15px;
+			margin-left: 5px;
+			color: white;
+			border: 0px;
+		}
+		#midden form {
+			height: 100px;
+		}
+		#midden button {
+			width: 80px;
+			height:30px;
+			background-image: linear-gradient(#444, #111);
+			margin-top: 15px;
+			float: right;
+			color: white;
+			border: 0px;
+		}
+		#midden1 {
+			width: 800px;
+			height: 351px;
+			float: left;
+			background-color: #111;
+			background-image: linear-gradient(#444, #111);
+			margin: 10px 0 10px 20px;
+			overflow: auto;
+		}
+		#speak {
+			width: 780px;
+			height: 100%;
+			margin: 10px 0 0 10px;
+			color: white;
+			}
+		#midden1-1 {
+			display: block;
+			background-color: #456;
+			padding: 5px;
+			color: #ffff99;
+		}
+
+		#left2 {
+			width: 180px;
+			height: 164px;
+			background-color: #111;
+			position: absolute;
+			top: 538px;
+		}
+		#left2 ul li {
+			padding: 10px;
+			text-indent: 45px;
+		}
+		#right1 {
+			width: 180px;
+			height: 100px;
+			background-color: #111;
+			background-image: linear-gradient(#444,#111);
+			float: left;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		#right1 p {
+			font: 12px Arial;
+			height: 80px;
+			padding: 10px;
+			line-height:20px;
+			color: white;
+			margin-left: 25px;
+		}
+		#right1 span {
+			color: #99ff99;
+		}
+		footer {
+			width: 1000px;
+			height: 100px;
+			background-color: #111;
+			backgroun-image: linear-gradient(#444,#111);
+			position: absolute;
+			top: 713px;
+		}
+		#bottom {
+			color: white;
+			font: 14px Arial;
+			text-align: center;
+			margin-top: 50px;
+			word-spacing: 20px;
+		}
+		#bottom a {
+			font: 14px Arial;
+			color: #00ffff;
+		}
+		#bottom a:hover {					/*鼠标移动到元素上*/
+			color: #acf;
+			text-decoration: underline;
+		}
+		#dongtai {
+			width: 85px;
+			height: 123px;
+			background-color: #111;
+			backgroun-image: linear-gradient(#444,#111);
+			position: absolute;
+			top: 380px;
+			left: 375px;
+			display: none;
+		}
+		#dongtai ul li {
+			padding: 10px;
+			text-indent: 5px;
+		}
+		::-webkit-input-placeholder {   /*设置表单中placeholder属性的颜色*/
+			color: pink;
+			opacity: 0.8;              /*透明度*/
+		}

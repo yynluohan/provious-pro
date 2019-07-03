@@ -1,0 +1,184 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+::-webkit-input-placeholder{         /*设置input元素中placeholder属性的颜色*/
+  color: green;
+  opacity: 0.6;
+}
+/*以上是整个文档通用的样式*/
+html{
+  background-color: #ccffcc;
+}
+body{
+  width: 1000px;
+  margin: 0px auto;
+}
+nav{
+  width: 1000px;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+}
+nav a{
+  color: black;
+}
+nav img{
+  float: left;
+  margin: 10px 30px;
+}
+#nav_ul li{
+  float: left;
+  padding: 20px;
+  margin: 20px auto;
+  font: bold 16px 黑体;
+}
+#nav_ul a:hover{
+  color: red;
+}
+#search{
+  float: right;
+  margin: 25px;
+  padding: 12px;
+}
+#search form{
+  border: 1px solid black;
+}
+#search input{
+  border: none;
+  width: 180px;
+  height: 23px;
+}
+aside{
+  width: 220px;
+  float: left;
+  margin-top: 120px;
+}
+#aside_div1{
+  background-color: #996633;
+  border-radius: 5px;
+}
+#aside_div1 h1{
+  margin: 0px 50px;
+  font: 18px arial;
+  text-align: center;
+}
+#aside_div1 span{
+  display: block;
+  line-height: 30px;
+  text-align: center;
+}
+aside h2{
+  height: 50px;
+  background-color: #099;
+  margin: 20px auto 10px;
+  font: 18px arial;
+  color: blue;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+}
+aside h2::after{
+  content: "";
+  position: absolute;
+  top: 270px;
+  left: 245px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.dt1,.dt2,.dt3,.dt4,.dt5,.dt6{
+  width: 194px;
+  padding: 13px;
+  text-indent: 20px;
+  color: white;
+  background-color: #996633;
+}
+#aside_ul li span{
+  margin-right: 5px;
+  color: white;
+}
+#menu{
+  width: 569px;
+  height: 272px;
+}
+.ol1,.ol2,.ol3,.ol4,.ol5,.ol6{
+  width: 350px;
+  height: 266px;
+  background-color: #111;
+  position: absolute;
+  left: 362px;
+  top: 281px;
+  display: none;
+}
+
+.ol1 li,.ol2 li,.ol3 li,.ol4 li,.ol5 li,.ol6 li{
+    padding: 12px;
+}
+.ol1 li a,.ol2 li a,.ol3 li a,.ol4 li a,.ol5 li a,.ol6 li a{
+  margin-left: 100px;
+  color: white;
+  font: bold 20px 黑体;
+}
+section{
+	width: 750px;
+	height: 426px;
+	float: right;
+	margin-top: 121px;
+  background-color: white;
+  overflow-y: auto;
+}
+section h1{
+  font: 18px arial;
+  text-align: center;
+  margin: 15px;
+  border-bottom: 1px dashed red;
+}
+section h2{
+  font: 16px arial;
+  text-indent: 20px;
+}
+section img{
+  width: 150px;
+  height: 150px;
+  margin-left: 300px;
+}
+section p{
+    margin-left: 20px;
+    margin-right: 35px;
+    text-indent: 35px;
+}
+section h3,section h4{
+  font: 16px arial;
+  text-indent: 20px;
+  margin: 16px auto;
+  color: blue;
+}
+footer{
+	width: 1000px;
+	height: 100px;
+	position: absolute;
+	top: 565px;
+	border: 1px solid #999;
+	background-color: #456;
+}
+#bottom{
+  color: white;
+	font: 14px Arial;
+	text-align: center;
+	margin-top: 50px;
+	word-spacing: 40px;
+}
+#bottom a{
+	color: black;
+  font: bold 15px arial;
+}
+#bottom a:hover{
+  color: red;
+}

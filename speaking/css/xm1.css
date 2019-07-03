@@ -1,0 +1,156 @@
+		*{
+			margin: 0px;
+		    padding: 0px;
+		}
+		ul{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;           /*设置全文本超链接a的颜色*/
+		}
+		#all{
+			width: 800px;
+			height: 1000px;
+			margin: 0px auto;
+		}
+		#top{
+			width: 800px;
+			height: 175px;
+	        background-image: url("./image/5.jpg");
+			position: fixed;                     /*设置为固定*/
+		}
+		#top span a{
+			color: white;                     /*设置span元素*/
+			font: 15px 楷体;
+			margin-right: 5px;
+		}
+		#top span a:hover{            /*设置span内超链接鼠标移动到元素时的颜色*/
+			color: red;
+		}
+		#top form{                    /*设置头部表单样式*/
+			float: right;
+			color: yellow;
+			margin-right: 5px;
+			font-family: 楷体;
+		}
+		#top form a{
+			color: yellow;          /*设置表单内a的颜色*/
+		}
+		#top ul{                    /*设置头部ul元素*/
+		    height: 37px;
+			list-style: none;
+			margin-top: 115px;
+		}
+		#top ul li{                 /*设置头部ul中li元素*/
+			width: 100px;
+			float: left;
+			margin-left: 40px;
+		}
+		#top ul a{   
+			color: #cff;          /*设置头部ul中链接的颜色*/
+		}
+		#top ul a:hover{          /*设置头部ul中设置超链接鼠标移动到元素时的颜色*/
+			color: red;
+		}
+		#top ul span{
+			margin-left: 50px;      
+			color: white;
+		}
+		#top form span{
+		}
+		#hidden{
+			width: 100px;
+			height: 196px;
+			position: absolute;
+			right: 274px;
+			top: 160px;
+			background-color: white;
+			opacity: 0.7;         /*设置透明度为0.4*/
+			display: none;  /*隐藏div元素*/
+		}
+		#hidden ul{
+			list-style: none;
+		}
+		#hidden ul li{
+			padding: 13px;
+			text-align: center;
+			border: 1px solid #999;
+		}
+		#hidden ul li a{
+			color: blue;
+		}
+		#left{                       /*设置中间的左半部分*/
+		    width:249px;
+			height: 600px;
+			float: left;
+			color：blue;
+			background-color: #cff;
+			margin-top: 175px;
+			border-right: 1px solid #456;
+			
+        }
+		#left span{
+			display: block;
+			text-align: center;
+			padding: 5px;
+			color: red;
+		}
+		#left ul li{
+           text-align: center;
+		   padding: 10px; 		   
+		}
+		#right{                      /*设置中间的右半部分*/
+			width: 550px;
+			height: 600px;
+			background-color: yellow;
+			float: left;
+			margin-top: 175px;
+		}
+		#right span{
+			display: block;
+			width: 550px;
+			height: 25px;
+			background-color: #456;
+			text-align: center;
+			color: red;
+		}
+		#right1{
+			width: 550px;
+			height: 275px; 
+			background-color: #cdd;
+			font: 14px 楷体;
+		}
+		#right1 p{
+			padding-top: 20px;
+			line-height: 30px;
+			text-indent: 15px;
+		}
+		#right2{
+			width: 550px;
+			height: 300px;
+			background-color: #caf;
+		}
+		#right2 ul{
+			display: wrap;
+		}
+		#right2 ul li{
+			margin: 20px 0px 0px 60px;
+			float: left;
+		}
+		#bottom{
+			width: 800px;
+			height: 120px;
+			background-color: #111;
+			background-image:linear-gradient(#444, #111);
+			float: left;	
+			text-align: center;
+			word-spacing: 30px;
+			line-height: 120px;
+			
+		}
+		#bottom a{
+			color: yellow;
+		}
+       #bottom a:hover{
+			color: red;
+	   }

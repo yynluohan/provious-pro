@@ -1,0 +1,145 @@
+"use strict";
+
+//是否关闭navs上的滚动条
+var nav_p1 = document.getElementById("nav_scroll");
+nav_p1.onclick = function(){
+	var a1 = confirm("你想关闭此滚动条码");
+	if(a1){
+		nav_p1.style.display="none";
+	}
+}
+
+//页面刷新一次时执行getTimes()函数
+window.onload=function() {
+	getTimes();
+}
+//获取系统时间
+function getTimes() {
+	var time = new Date(),
+	year = time.getFullYear(),
+		month = getChreakTime(time.getMonth() + 1),
+		date = getChreakTime(time.getDate()),
+		hours = getChreakTime(time.getHours()),
+		minutes = getChreakTime(time.getMinutes()),
+		day = time.getDay(),
+		dayStr;
+function getChreakTime(v) {
+	var s = v.toString();
+	if (s.length > 1) {
+		return s;
+	} else {
+		return '0' + s;
+	}
+}
+switch(day) {
+	case 0: dayStr = "星期天"; break;
+	case 1: dayStr = "星期一"; break;
+	case 2: dayStr = "星期二"; break;
+	case 3: dayStr = "星期三"; break;
+	case 4: dayStr = "星期四"; break;
+	case 5: dayStr = "星期五"; break;
+	case 6: dayStr = "星期六"; break;
+	default: dayStr = "输入错误";
+}
+var valueTime = year + '/' + month + '/' + date + ' ' + hours + ':' + minutes + '<br>' + dayStr;
+	document.getElementById("time").innerHTML = valueTime;
+}
+
+//此处为图片轮播
+window.setInterval("lunbo()","2500");   //两秒执行一次luobo()函数
+	var a = 1;
+	var b = 0;
+	function lunbo(){
+	var x = document.getElementsByTagName("img").length-2;    //找到图片的最大索引号
+	var images = document.getElementsByTagName("img");
+
+	var color = document.getElementsByTagName("button");     //对数字按钮进行同步
+	var list = document.getElementsByTagName("button").length-1;
+
+	for(var i = 1; i <= (x+1); i++){              //把图片隐藏
+		images[i].style.display = "none";
+	}
+	for(var j = 0;j <= list; j++){
+		color[j].style.backgroundColor="white";
+	}
+	a = a + 1;
+	b = b + 1;
+	if(a > (x+1)||b > list){
+		a = 1;
+		b = 0;
+	}
+	if(a === (b+1)){
+		color[b].style.backgroundColor="red";
+	}
+	images[a].style.display = "block";
+}
+
+//此处为jquery
+$(document).ready(function(){
+	//设置鼠标移动或移出.dt1时.ol1的变化
+	$(".dt1").mouseenter(function(){
+		$(".ol1").show();
+		$(this).css("background-color","#111");
+	})
+	$(".dt1").mouseleave(function(){
+		$(".ol1").hide();
+		$(this).css("background-color","#996633");
+	})
+
+
+	$(".dt2").mouseenter(function(){
+		$(".ol2").show();
+		$(this).css("background-color","#111");
+	})
+	$(".dt2").mouseleave(function(){
+		$(".ol2").hide();
+		$(this).css("background-color","#996633");
+	})
+
+
+	$(".dt3").mouseenter(function(){
+		$(".ol3").show();
+		$(this).css("background-color","#111");
+	})
+	$(".dt3").mouseleave(function(){
+		$(".ol3").hide();
+		$(this).css("background-color","#996633");
+	})
+
+	$(".dt4").mouseenter(function(){
+		$(".ol4").show();
+		$(this).css("background-color","#111");
+	})
+	$(".dt4").mouseleave(function(){
+		$(".ol4").hide();
+		$(this).css("background-color","#996633");
+	})
+
+	$(".dt5").mouseenter(function(){
+		$(".ol5").show();
+		$(this).css("background-color","#111");
+	})
+	$(".dt5").mouseleave(function(){
+		$(".ol5").hide();
+		$(this).css("background-color","#996633");
+	})
+
+	$(".dt6").mouseenter(function(){
+		$(".ol6").show();
+		$(this).css("background-color","#111");
+	})
+	$(".dt6").mouseleave(function(){
+		$(".ol6").hide();
+		$(this).css("background-color","#996633");
+	})
+
+	$(".ol1 li,.ol2 li,.ol3 li,.ol4 li,.ol5 li,.ol6 li").hover(
+		function() {
+			$(this).css("background-color","#456");
+		},
+		function() {
+			$(this).css("background-color","#111")
+		}
+	)
+
+});

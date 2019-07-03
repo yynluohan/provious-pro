@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>webpr主页</title>
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index1.css" />
+  </head>
+  <body>
+    <nav>
+      <!--导航上部分滚动条-->
+      <p id="nav_scroll">
+        <marquee direction="left" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+          想要学习web前端技术吗？想从菜鸟变大伽吗？想的话赶紧加入我们吧,
+          这里有html、css、javascript、php等各种文章等着你喔
+        </marquee>
+      </p>
+      <img src="./images/2.jpg"></img>
+      <!--导航条-->
+      <ul id="nav_ul">
+  			<li><a href="./index.html">主页</a></li>
+  			<li><a href="#">个人中心</a></li>
+  			<li><a href="./public.html">公开作品</a></li>
+  			<li><a href="./gy.html">关于我们</a></li>
+  			<li><a href="./reg.html">注册</a>｜<a href="./login.html">登录</a></li>
+  		</ul>
+      <div id="search">
+  			<form method="post" action="#">
+  				<input type="text" placeholder="作品/资料/好友">
+  				<a href="#"><span class="icon-search"></span></a>
+  			</form>
+  		</div>
+    </nav>
+    <aside>
+      <div id="aside_left">
+        <h1>
+          北京时间:
+        </h1>
+        <span id="time"></span>
+      </div>
+      <h2>
+        Web相关知识
+      </h2>
+      <div id="aside_menu">
+          <ul id="aside_ul">
+      			<li class="dt1">
+                  <span class="icon-th-list"></span>html
+                  <ol class="ol1">
+                      <li><a href="#">html</a></li>
+                      <li><a href="#">html5</a></li>
+                  </ol>
+            </li>
+    			<li class="dt2">
+                <span class="icon-th-list"></span>css
+                <ol class="ol2">
+                  <li><a href="#">css</a></li>
+                  <li><a href="#">css3</a></li>
+                </ol>
+          </li>
+    			<li class="dt3">
+                <span class="icon-th-list"></span>javascript
+                <ol class="ol3">
+                  <li><a href="#">javascript</a></li>
+                  <li><a href="#">jQuery</a></li>
+                  <li><a href="#">Node.js</a></li>
+                  <li><a href="#">Angular JS</a></li>
+                  <li><a href="#">Ajax</a></li>
+                </ol>
+          </li>
+    			<li class="dt4">
+                <span class="icon-th-list"></span>服务端
+                <ol class="ol4">
+                  <li><a href="#">php</a></li>
+                  <li><a href="#">Python</a></li>
+                  <li><a href="#">Python3</a></li>
+                  <li><a href="#">Linux</a></li>
+                  <li><a href="#">Ruby</a></li>
+                </ol>
+          </li>
+    			<li class="dt5">
+                <span class="icon-th-list"></span>数据库
+                <ol class="ol5">
+                  <li><a href="#">SQL</a></li>
+                  <li><a href="#">Mysql</a></li>
+                  <li><a href="#">SQLite</a></li>
+                  <li><a href="#">Mongo DB</a></li>
+                </ol>
+          </li>
+    			<li class="dt6">
+                <span class="icon-th-list"></span>网站建设
+                <ol class="ol6">
+                  <li><a href="#">HTTP</a></li>
+                  <li><a href="#">W3C</a></li>
+                </ol>
+          </li>
+    		</ul>
+      </div>
+    </aside>
+    <section>
+      <ul id="list_img">
+        <li><img src="./images/a.jpg"  class="img1"></img></li>
+        <li><img src="./images/b.jpg"  class="img2"></img></li>
+        <li><img src="./images/c.png"  class="img3"></img></li>
+        <li><img src="./images/d1.jpg" class="img4"></img></li>
+        <li><img src="./images/e.jpg"  class="img5"></img></li>
+      </ul>
+      <p id="list_button">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </p>
+    </section>
+    <footer>
+  		<div id="bottom">
+  			@版权所有  开发者：若寒
+  			<a href="#">网站首页</a>
+  			<a href="">管理入口</a>
+  		</div>
+  	</footer>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>webpr注册</title>
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reg.css" />
+  </head>
+  <body>
+    <nav>
+      <!--导航上部分滚动条-->
+      <p id="nav_scroll">
+        <marquee direction="left" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+          想要学习web前端技术吗？想从菜鸟变大伽吗？想的话赶紧加入我们吧,
+          这里有html、css、javascript、php等各种文章等着你喔
+        </marquee>
+      </p>
+      <img src="./images/2.jpg"></img>
+      <!--导航条-->
+      <ul id="nav_ul">
+  			<li><a href="./index.html">主页</a></li>
+  			<li><a href="#">个人中心</a></li>
+  			<li><a href="./public.html">公开作品</a></li>
+  			<li><a href="./gy.html">关于我们</a></li>
+  			<li><a href="./reg.html">注册</a>｜<a href="./login.html">登录</a></li>
+  		</ul>
+      <div id="search">
+  			<form method="post" action="#">
+  				<input type="text" placeholder="作品/资料/好友">
+  				<a href="#"><span class="icon-search"></span></a>
+  			</form>
+  		</div>
+    </nav>
+  	<section>
+  		<form name="myForm" method="post" id="myForm" action="#">
+  			<h1>注册界面</h1>
+  			<p class="p_name">
+  				<label>用户名:</label>
+  				<input type="text" id="username" placeholder="/请输入用户名">
+  			</p>
+  			<p>
+  				<label>密&nbsp;&nbsp;码:</label>
+  				<input type="password" id="password1" placeholder="/请输入密码">
+  			</p>
+  			<p class="p_password2">
+  				<label>确认密码:</label>
+  				<input type="password" id="password2" placeholder="/再次确认密码">
+  			</p>
+  			<button type="button" onclick="check()">提&nbsp;&nbsp;交</button>
+  		</form>
+  	</section>
+  	<script src="./js/reg.js"></script>
+  </body>
+</html>
